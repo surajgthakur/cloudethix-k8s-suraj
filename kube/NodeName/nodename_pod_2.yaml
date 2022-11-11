@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod-2
+  labels:
+    app: myapp2
+spec:
+  nodeName: worker02.cloudethix.com
+  containers:
+  - name: myapp-pod-2
+    image: busybox
+    command: ['sh', '-c', 'echo Hello Kubernetes! && sleep 3600']
