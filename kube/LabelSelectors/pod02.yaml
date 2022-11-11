@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-app-02
+spec:
+  containers:
+  - name: app2
+    image: nginx
+  nodeSelector:
+    Name: cloudethix-k8s-worker-02
